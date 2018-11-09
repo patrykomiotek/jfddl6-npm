@@ -9,12 +9,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "list": "ls -al",
     "say-hello": "node ./hello.js",
-    "build": "npm run clear && mkdir dist && touch ./dist/jfddl6.js",
-    "clear": "rm -rf ./dist"
+    "prebuild": "npm run clear",
+    "build": "mkdir dist && touch ./dist/jfddl6.js",
+    "postbuild": "echo builded!",
+    "clear": "rimraf ./dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "rimraf": "^2.6.2"
   }
 }
