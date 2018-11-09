@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "list": "ls -al",
     "say-hello": "node ./hello.js",
-    "build": "touch ./dist/jfddl6.js"
+    "build": "npm run clear && mkdir dist && touch ./dist/jfddl6.js",
+    "clear": "rm -rf ./dist"
   },
   "author": "",
   "license": "ISC",
