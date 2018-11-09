@@ -8,7 +8,8 @@
     "isa": "echo isa",
     "test": "echo \"Error: no test specified\" && exit 1",
     "list": "ls -al",
-    "say-hello": "node ./hello.js"
+    "say-hello": "node ./hello.js",
+    "build": "touch ./dist/jfddl6.js"
   },
   "author": "",
   "license": "ISC",
